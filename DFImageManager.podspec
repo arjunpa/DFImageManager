@@ -56,5 +56,10 @@ Pod::Spec.new do |s|
         ss.dependency 'DFImageManager/Core'
         ss.dependency 'libwebp'
         ss.source_files = 'Pod/Source/WebP/**/*.{h,m}'
+	    ss.xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) DF_WEBP=1' }
+	    ss.xconfig = webp.xcconfig = {
+            'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) DF_WEBP=1',
+            'USER_HEADER_SEARCH_PATHS' => '$(inherited) $(SRCROOT)/libwebp/src'
+  }
     end
 end

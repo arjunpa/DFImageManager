@@ -2,8 +2,16 @@
 //
 // Copyright (c) 2015 Alexander Grebenyuk (github.com/kean).
 
+#ifdef DF_WEBP
 #import "DFWebPImageDecoder.h"
+//#import <libwebp/webp/decode.h>
+
+#if !COCOAPODS
 #import <libwebp/webp/decode.h>
+#else
+//FIXME:WORKAROUND for CocoaPods1.0.0 + use_frameworks!
+#import <libwebp/webp/decode.h>
+#endif
 
 @implementation DFWebPImageDecoder
 
