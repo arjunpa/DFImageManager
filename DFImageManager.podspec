@@ -57,7 +57,7 @@ Pod::Spec.new do |s|
         ss.dependency 'libwebp'
         ss.source_files = 'Pod/Source/WebP/**/*.{h,m}'
 	    ss.xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) DF_WEBP=1' }
-	    ss.xconfig = webp.xcconfig = {
+	    ss.xconfig = ss.xcconfig = {
             'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) DF_WEBP=1',
             'USER_HEADER_SEARCH_PATHS' => '$(inherited) $(SRCROOT)/libwebp/src'
   }
