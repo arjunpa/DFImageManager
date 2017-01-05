@@ -6,12 +6,12 @@ Pod::Spec.new do |s|
                     Advanced framework for loading, caching, processing, displaying and preheating images. DFImageManager is a pipeline that loads images using multiple dependencies which can be injected in runtime. It features optional AFNetworking, FLAnimatedImage and WebP integration.
                     DESC
     s.license      = { :type => 'MIT', :file => 'LICENSE' }
-    s.homepage     = 'https://github.com/kean/DFImageManager'
-    s.author             = 'Alexander Grebenyuk'
-    s.social_media_url   = 'https://twitter.com/a_grebenyuk'
+    s.homepage     = 'https://github.com/arjunpa/DFImageManager'
+    s.author             = 'Arjun P A'
+    #s.social_media_url   = 'https://twitter.com/a_grebenyuk'
     s.ios.deployment_target = '8.0'
     s.watchos.deployment_target = '2.0'
-    s.source       = { :git => 'https://github.com/kean/DFImageManager.git', :tag => s.version.to_s }
+    s.source       = { :git => 'https://github.com/arjunpa/DFImageManager.git', :tag => s.version.to_s }
     s.requires_arc = true
     s.default_subspecs = 'Core', 'UI'
 
